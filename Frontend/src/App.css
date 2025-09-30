@@ -1,0 +1,156 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.app-header h1 {
+  color: #2c5530;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.app-header p {
+  color: #666;
+  margin: 10px 0 0 0;
+  font-size: 1.1rem;
+}
+
+.chat-form {
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.message-input:focus {
+  outline: none;
+  border-color: #2c5530;
+  box-shadow: 0 0 0 3px rgba(44, 85, 48, 0.1);
+}
+
+.submit-btn {
+  padding: 16px 24px;
+  background: #2c5530;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #1e3a23;
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.response-container {
+  background: white;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.response-header {
+  background: #2c5530;
+  padding: 15px 20px;
+  color: white;
+}
+
+.response-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.response-content {
+  padding: 25px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.response-content strong {
+  color: #2c5530;
+  font-weight: 600;
+}
+
+.response-content em {
+  color: #666;
+  font-style: italic;
+}
+
+.response-content li {
+  margin: 8px 0;
+  padding-left: 5px;
+}
+
+.response-content a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #ffeaea;
+  display: inline-block;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.response-content a:hover {
+  background: #ffd1d1;
+  transform: translateY(-1px);
+}
+
+.response-content br {
+  margin-bottom: 10px;
+  display: block;
+  content: "";
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+}
