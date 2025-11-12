@@ -8,6 +8,11 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+//Server check
+app.get('/', (req, res) => {
+  res.send('Running');
+});
+
 // Routes
 app.use('/api/chat', require('./routes/chat'));
 
