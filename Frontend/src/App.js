@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     
     try {
-      const res = await axios.post('http://localhost:5000/api/chat', {
+      const res = await axios.post('https://projectsev1b.vercel.app/api/chat', {
         message: message
       });
       setResponse(res.data.response);
